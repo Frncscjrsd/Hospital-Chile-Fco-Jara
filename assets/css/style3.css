@@ -1,0 +1,83 @@
+/* Estilos sección encabezado */
+
+.bienvenida {
+    background-image: url(../img/portadacontacto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+}
+
+.bienvenida h1 {
+    color: #407BFF;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.bienvenida div p {
+    color:#407BFF;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+
+/* Estilos para la sección de contacto */
+
+.contacto {
+    text-align: center;
+    margin: 20px;
+}
+
+.contacto h2 {
+    color: #407BFF;
+    margin: 32px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.contacto label {
+    text-align: left;
+    color: #407BFF;
+}
+
+.contacto input, .contacto textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contacto button {
+    background-color: #407BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Estilos mapa de ubicación */
+
+.ubicacion {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.ubicacion h2{
+    margin: 32px;
+    font-size: 40px;
+}
+
+.ubicacion iframe{
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+}

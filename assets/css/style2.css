@@ -1,0 +1,71 @@
+/* Estilos sección encabezado */
+
+.bienvenida {
+    background-image: url(../img/portadaequipomedico.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+}
+
+.bienvenida h1 {
+    color: #407BFF;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.bienvenida div p {
+    color: gray;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+
+/* Estilos sección presentación */
+
+.presentacion {
+    text-align: center;
+    margin: 40px;
+}
+
+.presentacion h2 {
+    color: #407BFF;
+    margin-bottom: 32px;
+}
+
+.equipo-medico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.doctor {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 250px;
+    padding: 16px;
+    text-align: center;
+}
+
+.doctor p {
+    text-align: justify;
+    font-size: 18px;
+    margin: 8px;
+}
+
+.doctor img {
+    width: 100%;
+    border-radius: 1px;
+}
+
+.doctor h3 {
+    color: #407BFF;
+    margin: 8px;
+}
+
+footer p {
+    color: white;
+}

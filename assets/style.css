@@ -1,0 +1,335 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía online Google Font */
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #407BFF;
+}
+
+ h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #407BFF;
+}
+
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #407BFF; 
+}
+
+h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+}
+
+h5{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #407BFF;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    font-style: normal;
+}
+
+a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+
+/* Estillos sección menú navegación */
+
+.seccion-navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #90CAF9;
+    padding: 16px 0px 10px 0px;
+}
+
+.seccion-navbar button {
+    border-radius: 26px;
+    border: none;
+    padding: 2px 44px;
+    background-color: #407BFF;
+    margin-bottom: 5px;
+}
+
+.seccion-navbar button a {
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.lista-navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+    margin-top: 8px;
+}
+
+.lista-navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.lista-navbar a:hover {
+    text-decoration: underline;
+    color: #407BFF;
+}
+
+/* Estilos sección encabezado */
+
+.bienvenida {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    background-color: #f4f4f4;
+    height: 717px;
+    background: linear-gradient(300deg,#ffffff,#407bff);
+    background-size: 120% 120%;
+    animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bienvenida img {
+    width: 600px;
+    margin-bottom: 120px;
+}
+
+.bienvenida h1 {
+    color: whitesmoke;
+}
+
+.bienvenida div p {
+    text-align: justify;
+    margin-top: 32px;
+    color: white;
+}
+
+/* Estilos sección servicios */
+
+.seccion-servicios {
+    padding: 50px;
+    text-align: center;
+    height: auto;
+}
+
+.seccion-servicios h2 {
+    margin-bottom: 1rem;
+    color: #407BFF;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+    margin-top: 15px;
+}
+
+.card-servicios img {
+    width: 80%;
+}
+
+.card-servicios p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.card-servicios button {
+    border-radius: 26px;
+    border: none;
+    padding: 8px 28px;
+    background-color: #407BFF;
+    margin: 16px 0;
+}
+
+.card-servicios a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Estilos sección testimonios */
+
+.secciontestimoniosdesktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 64px;
+}
+
+.titulo-testimonios {
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #407BFF;
+    text-align: center;
+}
+
+.testimonios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.cardtestimonio1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #90CAF9;
+    border-radius: 15px;
+    padding: 32px;
+    width: 400px;
+    height: 300px;
+    color: white;
+}
+
+.cardtestimonio1 p {
+    text-align: justify;
+    margin: 0 0 80px 0;
+    color: white;
+}
+
+.nombremasiconos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nombreusuario {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0px 0;
+}
+
+.nombreusuario h4 {
+    color: white;
+}
+
+.nombreusuario h5 {
+    color: white;
+}
+
+.iconosrssusuarios {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.iconosrssusuarios a {
+    margin: 0 8px 0 8px;
+}
+
+/* Estilos sección Footer */
+
+.seccionfooterdesktop {
+    display: flex;
+    justify-content: center;
+    height: 279px;
+    width: 100%;
+    background-color: #90CAF9;
+}
+
+.columnasfooter {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.columnasfooter a {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.columnasfooter h4 {
+    color: #407BFF;
+}
+
+.columna-uno-footer,
+.columna-dos-footer,
+.columna-tres-footer,
+.columna-cuatro-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    margin: 0 32px;
+}
+
+.columna-cuatro-footer {
+    width: 354px;
+}
+
+.columna-cuatro-footer p {
+    font-size: 14px;
+    color: white;
+}
+
+/* Barra buscar */
+
+.seccionfooterdesktop input {
+    width: 354px;
+    height: 46px;
+    background-color: white;
+    padding: 8px;
+    border: none;   
+}
+
+.barrabuscar {
+    position: relative;
+    list-style: none;
+}
+
+.barrabuscar i {
+    position: absolute;
+    margin-left: 10px; 
+    margin-top: 8px;
+}
+
+.bi2 {
+    font-size: 25px;
+}

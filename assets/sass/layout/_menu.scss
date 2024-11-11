@@ -1,0 +1,43 @@
+/* Bloque principal de la barra de navegación */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #90CAF9;
+    padding: 16px 0 10px 0;
+}
+
+/* Elemento botón dentro del bloque navbar */
+.menu__button {
+    border-radius: 26px;
+    border: none;
+    padding: 2px 44px;
+    background-color: #407BFF;
+    margin-bottom: 5px;
+}
+
+/* Elemento enlace dentro de navbar__button */
+.menu__button-link {
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+/* Bloque lista de enlaces en la barra de navegación */
+.menu__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+    margin-top: 8px;
+}
+
+/* Elemento enlace dentro de navbar__list */
+.menu__list-item {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.menu__list-item:hover {
+    text-decoration: underline;
+    color: #407BFF;
+}

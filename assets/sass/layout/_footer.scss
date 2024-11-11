@@ -1,0 +1,72 @@
+/* Estilos sección Footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 279px;
+    width: 100%;
+    background-color: #90CAF9;
+}
+
+.footer__column {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.footer__link {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer__heading {
+    color: #407BFF;
+}
+
+.footer__column--one,
+.footer__column--two,
+.footer__column--three,
+.footer__column--four {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    margin: 0 32px;
+}
+
+.footer__column--four {
+    width: 354px;
+}
+
+.footer__column--four p {
+    font-size: 14px;
+    color: white;
+}
+
+/* Barra buscar */
+
+.footer__search {
+    position: relative;
+    list-style: none;
+}
+
+.footer__search-input {
+    width: 354px;
+    height: 46px;
+    background-color: white;
+    padding: 8px;
+    border: none;   
+}
+
+.footer__search-icon {
+    position: absolute;
+    margin-left: 10px; 
+    margin-top: 8px;
+}
+
+.footer__search-icon--bi2 {
+    font-size: 25px;
+}

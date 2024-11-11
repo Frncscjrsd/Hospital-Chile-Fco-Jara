@@ -1,0 +1,56 @@
+/* Tipografía online Google Font */
+
+/* Bloque de encabezados */
+.typography {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+/* Encabezado nivel 1 */
+.typography__heading--primary {
+    font-weight: 700;
+    font-size: 40px;
+    color: #407BFF;
+}
+
+/* Encabezado nivel 2 */
+.typography__heading--secondary {
+    font-weight: 700;
+    font-size: 40px;
+    color: #407BFF;
+}
+
+/* Encabezado nivel 3 */
+.typography__heading--tertiary {
+    font-weight: 400;
+    font-size: 18px;
+    color: #407BFF;
+}
+
+/* Encabezado nivel 4 */
+.typography__heading--quaternary {
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+/* Encabezado nivel 5 */
+.typography__heading--quinary {
+    font-weight: 300;
+    font-size: 14px;
+    color: #407BFF;
+}
+
+/* Párrafo */
+.typography__paragraph {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* Enlace */
+.typography__link {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}

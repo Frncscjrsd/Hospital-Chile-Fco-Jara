@@ -1,0 +1,335 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía online Google Font */
+/* Bloque de encabezados */
+.typography {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+/* Encabezado nivel 1 */
+.typography__heading--primary {
+  font-weight: 700;
+  font-size: 40px;
+  color: #407BFF;
+}
+
+/* Encabezado nivel 2 */
+.typography__heading--secondary {
+  font-weight: 700;
+  font-size: 40px;
+  color: #407BFF;
+}
+
+/* Encabezado nivel 3 */
+.typography__heading--tertiary {
+  font-weight: 400;
+  font-size: 18px;
+  color: #407BFF;
+}
+
+/* Encabezado nivel 4 */
+.typography__heading--quaternary {
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
+
+/* Encabezado nivel 5 */
+.typography__heading--quinary {
+  font-weight: 300;
+  font-size: 14px;
+  color: #407BFF;
+}
+
+/* Párrafo */
+.typography__paragraph {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/* Enlace */
+.typography__link {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Bloque principal para la sección de servicios */
+.services {
+  padding: 50px;
+  text-align: center;
+  height: auto;
+}
+
+/* Elemento de título (h2) dentro del bloque services */
+.services__title {
+  margin-bottom: 1rem;
+  color: #407BFF;
+}
+
+/* Elemento de contenedor de la cuadrícula de servicios */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 4rem;
+  margin-top: 15px;
+}
+
+.services__button {
+  border-radius: 26px;
+  border: none;
+  padding: 16px 10px;
+  background-color: #407BFF;
+  margin: 16px 0;
+}
+
+.services__button-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.services__button-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* Sección de testimonios */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 64px;
+}
+
+.testimonials__title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #407BFF;
+  text-align: center;
+}
+
+.testimonials__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.testimonials__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #90CAF9;
+  border-radius: 15px;
+  padding: 32px;
+  width: 400px;
+  height: 300px;
+  color: white;
+}
+
+.testimonials__card-text {
+  text-align: justify;
+  margin: 0 0 80px 0;
+  color: white;
+}
+
+.testimonials__card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials__user-info {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 0 0;
+}
+
+.testimonials__user-name {
+  color: white;
+}
+
+.testimonials__user-role {
+  color: white;
+}
+
+.testimonials__social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.testimonials__social-icon {
+  margin: 0 8px;
+}
+
+/* Bloque principal de la barra de navegación */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #90CAF9;
+  padding: 16px 0 10px 0;
+}
+
+/* Elemento botón dentro del bloque navbar */
+.menu__button {
+  border-radius: 26px;
+  border: none;
+  padding: 2px 44px;
+  background-color: #407BFF;
+  margin-bottom: 5px;
+}
+
+/* Elemento enlace dentro de navbar__button */
+.menu__button-link {
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+/* Bloque lista de enlaces en la barra de navegación */
+.menu__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 2rem;
+  margin-top: 8px;
+}
+
+/* Elemento enlace dentro de navbar__list */
+.menu__list-item {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.menu__list-item:hover {
+  text-decoration: underline;
+  color: #407BFF;
+}
+
+/* Estilos sección Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 279px;
+  width: 100%;
+  background-color: #90CAF9;
+}
+
+.footer__column {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.footer__link {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__heading {
+  color: #407BFF;
+}
+
+.footer__column--one,
+.footer__column--two,
+.footer__column--three,
+.footer__column--four {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  margin: 0 32px;
+}
+
+.footer__column--four {
+  width: 354px;
+}
+
+.footer__column--four p {
+  font-size: 14px;
+  color: white;
+}
+
+/* Barra buscar */
+.footer__search {
+  position: relative;
+  list-style: none;
+}
+
+.footer__search-input {
+  width: 354px;
+  height: 46px;
+  background-color: white;
+  padding: 8px;
+  border: none;
+}
+
+.footer__search-icon {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.footer__search-icon--bi2 {
+  font-size: 25px;
+}
+
+/* Bloque principal para la sección de encabezado */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  background-color: #f4f4f4;
+  height: 717px;
+  background: linear-gradient(300deg, #ffffff, #407bff);
+  background-size: 120% 120%;
+  animation: header__gradient-animation 6s ease infinite;
+}
+
+/* Animación de gradiente */
+@keyframes header__gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Elemento de imagen dentro del bloque header */
+.header__image {
+  width: 600px;
+  margin-bottom: 120px;
+}
+
+/* Elemento de título (h1) dentro del bloque header */
+.header__title {
+  color: whitesmoke;
+}
+
+/* Elemento de párrafo dentro del div en el bloque header */
+.header__text {
+  text-align: justify;
+  margin-top: 32px;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

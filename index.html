@@ -17,8 +17,7 @@
 
     <!-- Archivo CSS principal -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/mediaq.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Tipografía -->
 
@@ -32,73 +31,78 @@
     
 </head>
 
-<body>
+<body class="typography">
+
+    <!-- <h1 class="typography__heading--primary"></h1>
+    <h2 class="typography__heading--secondary"></h2>
+    <p class="typography__paragraph"></p>
+    <a href="#" class="typography__link"></a> -->
 
     <!--Sección barra de navegación-->
 
-    <nav id="navbar" class="seccion-navbar">
+    <nav id="menu" class="menu">
 
         <a href="index.html"><img src="assets/img/logo.png" width="40px" alt="logotipo"></a>
 
-        <ul class="lista-navbar">
+        <ul class="menu__list">
 
             <li>
-                <a href="index.html">Inicio</a>
+                <a class="menu__list-item" href="index.html">Inicio</a>
             </li>
             <li>
-                <a href="index.html">Servicios</a>
+                <a class="menu__list-item" href="index.html">Servicios</a>
             </li>
             <li>
-                <a href="equipomedico.html">Equipo médico</a>
+                <a class="menu__list-item" href="equipomedico.html">Equipo médico</a>
             </li>
             <li>
-                <a href="index.html">Testimonios</a>
+                <a class="menu__list-item" href="index.html">Testimonios</a>
             </li>
             <li>
-                <a href="contacto.html">Contacto</a>
+                <a class="menu__list-item" href="contacto.html">Contacto</a>
             </li>
            
         </ul>
 
-        <button> <a href="equipomedico.html">Reservar cita</a></button>
+        <button class="menu__button"> <a class="menu__button-link" href="equipomedico.html">Reservar cita</a></button>
 
     </nav>
 
     <!-- Sección encabezado -->
 
-    <header id="encabezado" class="bienvenida">
+    <header id="header" class="header">
 
         <div>
-            <h1>Bienvenido al Hospital Privado <br> para Chile</h1>
-            <p>Nuestro compromiso es cuidar de su salud con dedicación, profesionalismo y un trato cercano. Nos esforzamos cada día para ofrecer una atención de calidad, donde el bienestar y la seguridad de nuestros pacientes son nuestra prioridad. En Hospital privado para Chile, nuestra misión es brindar servicios médicos integrales y personalizados, mientras que nuestra visión es ser un referente de excelencia y humanidad en el cuidado de la salud.</p>
+            <h1 class="header__title">Bienvenido al Hospital Privado <br> para Chile</h1>
+            <p class="header__text">Nuestro compromiso es cuidar de su salud con dedicación, profesionalismo y un trato cercano. Nos esforzamos cada día para ofrecer una atención de calidad, donde el bienestar y la seguridad de nuestros pacientes son nuestra prioridad. En Hospital privado para Chile, nuestra misión es brindar servicios médicos integrales y personalizados, mientras que nuestra visión es ser un referente de excelencia y humanidad en el cuidado de la salud.</p>
         </div>
 
-        <img src="assets/img/hospitalprivado.svg" alt="Imagen del hospital privado">
+        <img class="header__image" src="assets/img/hospitalprivado.svg" alt="Imagen del hospital privado">
 
     </header>
 
     <!-- Sección servicios -->
 
-    <section id="servicios" class="seccion-servicios">
+    <section id="services" class="services">
 
-        <h2>Nuestros servicios</h2>
+        <h2 class="services__title">Nuestros servicios</h2>
 
-        <div class="servicios-grid">
+        <div class="services__grid">
 
-            <article class="card-servicios">
+            <article class="services__grid">
                 <img src="assets/img/consultas.svg" alt="imagen de consultas médicas">
                 <p>Atención personalizada y profesional en chequeos generales y consultas especializadas.</p>
-                <button> <a href="index.html">Consultas</a></button>
+                <button class="services__button"> <a class="services__button-link" href="index.html">Consultas</a></button>
             </article>
-            <article class="card-servicios">
+            <article class="services__grid">
                 <img src="assets/img/emergencias.svg" alt="imagen de servicio urgencias">
                 <p>Atención rápida y segura en emergencias médicas, disponible en todo momento.</p>
-                <button> <a href="index.html">Urgencias</a></button>
+                <button class="services__button"> <a class="services__button-link" href="index.html">Urgencias</a></button>
             </article>
-            <article class="card-servicios">
+            <article class="services__grid">
                 <img src="assets/img/especialidades.svg" alt="imagen especialidades médicas">
                 <p>Diagnósticos y tratamientos avanzados en diversas áreas, como cardiología y pediatría.</p>
-                <button> <a href="equipomedico.html">Especialidades</a></button>
+                <button class="services__button"> <a class="services__button-link" href="equipomedico.html">Especialidades</a></button>
             </article>
 
         </div>
@@ -107,79 +111,89 @@
 
     <!-- Sección testimonios -->
 
-      <section class="secciontestimoniosdesktop">
+      <section class="testimonials">
 
-        <h2 class="titulo-testimonios">Nuestros testimonios</h2>
+        <h2 class="testimonials__title">Nuestros testimonios</h2>
 
-        <article class="testimonios-grid">
+        <article class="testimonials__grid">
 
-            <div class="cardtestimonio1">
+            <div class="testimonials__card">
 
-                <p>"El equipo médico fue increíble. Me sentí cuidado en cada etapa de mi tratamiento y siempre respondieron a todas mis preguntas con paciencia y amabilidad."</p>
-
-                <figure>
-                    <img src="assets/img/imagenperfil.png" height="25px" alt="fotoperfil">
-                </figure>
-
-                <div class="nombremasiconos">
-
-                    <div class="nombreusuario">
-                        <h4>Ana Lopez</h4>
-                        <h5>26 - 06 -2024</h5>
+                <p class="testimonials__card-text">"El equipo médico fue increíble. Me sentí cuidado en cada etapa de mi tratamiento y siempre respondieron a todas mis preguntas con paciencia y amabilidad."</p>
+    
+                <div class="testimonials__card-footer">
+    
+                    <figure class="testimonials__user-avatar">
+                        <img src="assets/img/imagenperfil.png" height="25px" alt="fotoperfil">
+                    </figure>
+    
+                    <div class="testimonials__user-info">
+                        <h4 class="testimonials__user-name">Ana Lopez</h4>
+                        <h5 class="testimonials__user-role">26 - 06 - 2024</h5>
                     </div>
-
-                    <div class="iconosrssusuarios">
-                        <a href="index.html"><img src="assets/img/facebook.png" height="25px" alt=""></a>
-                        <a href="index.html"><img src="assets/img/twitter.png" height="25px" alt=""></a>
+    
+                    <div class="testimonials__social-icons">
+                        <a class="testimonials__social-icon" href="index.html">
+                            <img src="assets/img/facebook.png" height="25px" alt="Facebook">
+                        </a>
+                        <a class="testimonials__social-icon" href="index.html">
+                            <img src="assets/img/twitter.png" height="25px" alt="Twitter">
+                        </a>
                     </div>
+    
+                </div>
+    
+            </div>
+
+            <div class="testimonials__card">
+
+                <p class="testimonials__card-text">"Gracias a las atenciones del hospital, pude recuperarme mucho más rápido de lo que esperaba. El personal es muy profesional y humano."</p>
+
+                <div class="testimonials__card-footer">
+    
+                    <figure class="testimonials__user-avatar">
+                        <img src="assets/img/imagenperfil.png" height="25px" alt="fotoperfil">
+                    </figure>
+    
+
+                    <div class="testimonials__user-info">
+
+                       
+                         <h4 class="testimonials__user-name">Juan Perez</h4>
+                         <h5 class="testimonials__user-role">20 - 05 -2024</h5>
+                    
+
+                        <div class="testimonials__social-icons">
+                            <a class="testimonials__social-icon" href="index.html"><img src="assets/img/facebook.png" height="25px" alt=""></a>
+                            <a class="testimonials__social-icon" href="index.html" href="index.html"><img src="assets/img/twitter.png" height="25px" alt=""></a>
+                        </div>
+                    </div>   
 
                 </div>
 
             </div>
 
-            <div class="cardtestimonio1">
+            <div class="testimonials__card">
 
-                <p>"Gracias a las atenciones del hospital, pude recuperarme mucho más rápido de lo que esperaba. El personal es muy profesional y humano."</p>
+                <p class="testimonials__card-text">"Desde el primer día me sentí en buenas manos. Las instalaciones son de primera y el equipo médico siempre estuvo dispuesto a ayudarme."</p>
 
-                <figure>
-                    <img src="assets/img/imagenperfil.png" height="25px" alt="fotoperfil">
-                </figure>
+                <div class="testimonials__card-footer">
 
-                <div class="nombremasiconos">
+                        <figure class="testimonials__user-avatar">
+                            <img src="assets/img/imagenperfil.png" height="25px" alt="fotoperfil">
+                        </figure>
 
-                    <div class="nombreusuario">
-                        <h4>Juan Perez</h4>
-                        <h5>20 - 05 -2024</h5>
-                    </div>
+                        <div class="testimonials__user-info">
+ 
+                            <h4 class="testimonials__user-name">María González</h4>
+                            <h5 class="testimonials__user-role">12 - 065 -2024</h5>
+                            
+                            <div class="testimonials__social-icons">>
+                                <a s="testimonials__social-icons" href="index.html"><img src="assets/img/facebook.png" height="25px" alt=""></a>
+                                <a s="testimonials__social-icons" class="tw" href="index.html"><img src="assets/img/twitter.png" height="25px" alt=""></a>
+                            </div>
 
-                    <div class="iconosrssusuarios">
-                        <a href="index.html"><img src="assets/img/facebook.png" height="25px" alt=""></a>
-                        <a href="index.html"><img src="assets/img/twitter.png" height="25px" alt=""></a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="cardtestimonio1">
-
-                <p>"Desde el primer día me sentí en buenas manos. Las instalaciones son de primera y el equipo médico siempre estuvo dispuesto a ayudarme."</p>
-
-                <figure>
-                    <img src="assets/img/imagenperfil.png" height="25px" alt="fotoperfil">
-                </figure>
-
-                <div class="nombremasiconos">
-
-                    <div class="nombreusuario">
-                        <h4>María González</h4>
-                        <h5>12 - 065 -2024</h5>
-                    </div>
-
-                    <div class="iconosrssusuarios">
-                        <a href="index.html"><img src="assets/img/facebook.png" height="25px" alt=""></a>
-                        <a class="tw" href="index.html"><img src="assets/img/twitter.png" height="25px" alt=""></a>
-                    </div>
+                        </div>
 
                 </div>
 
@@ -191,49 +205,49 @@
 
     <!-- Sección Footer -->
 
-      <section class="seccionfooterdesktop">
+      <section class="footer">
 
-        <article class="columnasfooter">
+        <article class="footer__column">
 
             <div class="logofooter">
-                <a href="index.html"><img src="assets/img/logo.png" height="80px" alt=""></a>
+                <a class="footer__link" href="index.html"><img src="assets/img/logo.png" height="80px" alt=""></a>
             </div>
 
             <div>
-                <ul class="columna-uno-footer">
-                    <li> <h4>Enlaces utiles</h4></li>
-                    <li><a href="index.html">Mi cuenta</a></li>
-                    <li><a href="contacto.html">Ayuda</a></li>
-                    <li><a href="contacto.html">Soporte</a></li>
+                <ul class="footer__column--one">
+                    <li> <h4 class="footer__heading">Enlaces utiles</h4></li>
+                    <li><a class="footer__link" href="index.html">Mi cuenta</a></li>
+                    <li><a class="footer__link" href="contacto.html">Ayuda</a></li>
+                    <li><a class="footer__link" href="contacto.html">Soporte</a></li>
                 </ul>
             </div>
 
             <div>
-                <ul class="columna-dos-footer">
-                    <li> <h4>Protegiendo tu experiencia</h4></li>
-                    <li><a href="index.html">Política de privacidad</a></li>
-                    <li><a href="index.html">Política de cookies</a></li>
-                    <li><a href="index.html">Término de Uso</a></li>
+                <ul class="footer__column--twor">
+                    <li> <h4 class="footer__heading">Protegiendo tu experiencia</h4></li>
+                    <li><a class="footer__link" href="index.html">Política de privacidad</a></li>
+                    <li><a class="footer__link" href="index.html">Política de cookies</a></li>
+                    <li><a class="footer__link" href="index.html">Término de Uso</a></li>
                 </ul>
             </div>
 
             <div>
-                <ul class="columna-tres-footer">
-                    <li> <h4>Empresa</h4></li>
-                    <li><a href="index.html">Hospital privado</a></li>
-                    <li><a href="index.html">Sobre nosotros</a></li>
-                    <li><a href="contacto.html">Trabaja con Nosotros</a></li>
+                <ul class="footer__column--three">
+                    <li> <h4 class="footer__heading">Empresa</h4></li>
+                    <li><a class="footer__link" href="index.html">Hospital privado</a></li>
+                    <li><a class="footer__link" href="index.html">Sobre nosotros</a></li>
+                    <li><a class="footer__link" href="contacto.html">Trabaja con Nosotros</a></li>
                 </ul>
             </div>
 
-            <div class="columna-cuatro-footer">
+            <div class="footer__column--four">
 
-                <h4>Suscríbete</h4>
+                <h4 class="footer__heading">Suscríbete</h4>
 
-                <div class="inputsuscribirse">
+                <div class="footer__search">
                     <ul>
-                        <li class="barrabuscar"><i class="bi bi-search"></i><input type="text" placeholder="Correo electrónico"></li>
-                        <li><a href="index.html"><i class="bi2 bi-person"></i></a></li>
+                        <li class="footer__search-input"><i class="footer__search-icon"></i><input type="text" placeholder="Correo electrónico"></li>
+                        <li><a class="typography__link" href="index.html"><i class="footer__search-icon--bi2"></i></a></li>
                     </ul>
                 </div>
 

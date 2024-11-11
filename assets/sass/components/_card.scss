@@ -1,0 +1,113 @@
+/* Bloque principal para la sección de servicios */
+.services {
+    padding: 50px;
+    text-align: center;
+    height: auto;
+}
+
+/* Elemento de título (h2) dentro del bloque services */
+.services__title {
+    margin-bottom: 1rem;
+    color: #407BFF;
+}
+
+/* Elemento de contenedor de la cuadrícula de servicios */
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+    margin-top: 15px;
+}
+
+.services__button {
+    border-radius: 26px;
+    border: none;
+    padding: 16px 10px;
+    background-color: #407BFF;
+    margin: 16px 0;
+}
+
+.services__button-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.services__button-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Sección de testimonios */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 64px;
+}
+
+.testimonials__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #407BFF;
+    text-align: center;
+}
+
+.testimonials__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.testimonials__card {
+    display: flex;
+    flex-direction: column;
+    background-color: #90CAF9;
+    border-radius: 15px;
+    padding: 32px;
+    width: 400px;
+    height: 300px;
+    color: white;
+}
+
+.testimonials__card-text {
+    text-align: justify;
+    margin: 0 0 80px 0;
+    color: white;
+}
+
+.testimonials__card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__user-info {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0 0;
+}
+
+.testimonials__user-name {
+    color: white;
+}
+
+.testimonials__user-role {
+    color: white;
+}
+
+.testimonials__social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.testimonials__social-icon {
+    margin: 0 8px;
+}

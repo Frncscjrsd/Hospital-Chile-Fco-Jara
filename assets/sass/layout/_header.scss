@@ -1,0 +1,43 @@
+/* Bloque principal para la sección de encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    background-color: #f4f4f4;
+    height: 717px;
+    background: linear-gradient(300deg, #ffffff, #407bff);
+    background-size: 120% 120%;
+    animation: header__gradient-animation 6s ease infinite;
+}
+
+/* Animación de gradiente */
+@keyframes header__gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Elemento de imagen dentro del bloque header */
+.header__image {
+    width: 600px;
+    margin-bottom: 120px;
+}
+
+/* Elemento de título (h1) dentro del bloque header */
+.header__title {
+    color: whitesmoke;
+}
+
+/* Elemento de párrafo dentro del div en el bloque header */
+.header__text {
+    text-align: justify;
+    margin-top: 32px;
+    color: white;
+}

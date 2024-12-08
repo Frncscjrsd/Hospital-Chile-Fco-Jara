@@ -37,6 +37,25 @@ Interactividad en la barra de navegación (menú desplegable).
 Animaciones ligeras para mejorar la experiencia de usuario.
 Se evaluó el uso de TypeScript como alternativa para escalar el proyecto en el futuro.
 
+### Event Loop en JavaScript:
+JavaScript usa un **event loop** para manejar la ejecución de código. Existen dos partes principales:
+
+- **Call Stack**: El lugar donde se colocan las funciones que se ejecutan de manera sincrónica. Si una función se ejecuta de manera sincrónica, se coloca en la pila de llamadas (call stack).
+- **Heap**: Memoria donde se almacenan los objetos y datos.
+- **Event Queue**: Cola donde se colocan las tareas asincrónicas (por ejemplo, eventos, promesas) que se ejecutan después de que la pila de llamadas esté vacía.
+
+El **event loop** monitorea la pila de llamadas y la cola de eventos, ejecutando las tareas cuando la pila está vacía.
+
+### Scope de las Variables:
+- **`let` y `const`**: Tienen un scope de bloque, es decir, están disponibles solo dentro del bloque donde se definen (por ejemplo, dentro de una función o un `if`).
+- **`var`**: Tiene un scope de función, lo que significa que está disponible en toda la función en la que se declara, incluso fuera de bloques como `if` o `for`.
+
+### Uso de `try/catch` y Debugger:
+- El bloque `try/catch` se utiliza para manejar errores de manera controlada. Si ocurre un error dentro del bloque `try`, el código en `catch` se ejecutará para manejarlo.
+- El uso de `debugger` permite pausar la ejecución del código y revisar las variables en ese momento en el navegador para facilitar la depuración.
+
+
+
 ## Contenido
 
 1. **Archivos HTML**: index.html: Página principal.

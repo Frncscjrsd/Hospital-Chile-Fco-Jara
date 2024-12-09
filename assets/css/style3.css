@@ -1,5 +1,4 @@
 /* Estilos sección encabezado */
-
 .bienvenida {
     background-image: url(../img/portadacontacto.jpg);
     background-size: cover;
@@ -7,8 +6,12 @@
     background-repeat: no-repeat;
     padding: 20px;
     text-align: center;
+    height: 400px; /* Ajusta la altura para que no se vea excesiva */
+    max-height: 600px; /* Limita la altura máxima */
+    width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
+/* Ajustes en los elementos dentro de la sección */
 .bienvenida h1 {
     color: #407BFF;
     text-align: left;
@@ -16,13 +19,12 @@
 }
 
 .bienvenida div p {
-    color:#407BFF;
+    color: #407BFF;
     margin-left: 2rem;
     font-size: 20px;
 }
 
 /* Estilos para la sección de contacto */
-
 .contacto {
     text-align: center;
     margin: 20px;
@@ -53,6 +55,8 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%; /* Hace que los campos de entrada se ajusten al contenedor */
+    box-sizing: border-box; /* Incluye padding en el cálculo del tamaño total */
 }
 
 .contacto button {
@@ -62,22 +66,34 @@
     border-radius: 4px;
     padding: 8px 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contacto button:hover {
+    background-color: #365bb1;
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+.contacto button:focus {
+    outline: none;
+    border: 2px solid #365bb1; /* Resalta el borde cuando el botón tiene foco */
 }
 
 /* Estilos mapa de ubicación */
-
 .ubicacion {
     text-align: center;
     margin: 40px 0;
 }
 
-.ubicacion h2{
+.ubicacion h2 {
     margin: 32px;
     font-size: 40px;
 }
 
-.ubicacion iframe{
-    width: 800px;
+.ubicacion iframe {
+    width: 100%; /* Hace que el mapa ocupe el 100% del ancho del contenedor */
+    max-width: 800px; /* Limita el tamaño máximo del mapa */
     height: 400px;
     border-radius: 20px;
+    margin: 0 auto; /* Centra el mapa */
 }

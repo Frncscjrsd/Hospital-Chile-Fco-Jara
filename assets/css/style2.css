@@ -33,6 +33,8 @@
     margin-bottom: 32px;
 }
 
+/* Estilos equipo médico */
+
 .equipo-medico {
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +50,8 @@
     width: 250px;
     padding: 16px;
     text-align: center;
+    max-width: 100%; /* Asegura que no exceda el contenedor */
+    box-sizing: border-box; /* Asegura que el padding no expanda el tamaño */
 }
 
 .doctor p {
@@ -57,8 +61,11 @@
 }
 
 .doctor img {
-    width: 100%;
-    border-radius: 1px;
+    width: 100%; /* Hace que las imágenes se adapten al contenedor */
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 0%; /* Si deseas una imagen circular */
+    margin-bottom: 16px; /* Espacio debajo de la imagen */
 }
 
 .doctor h3 {
@@ -66,6 +73,7 @@
     margin: 8px;
 }
 
+/* Estilos de pie de página */
 footer p {
     color: white;
 }

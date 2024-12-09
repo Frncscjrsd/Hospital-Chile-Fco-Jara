@@ -10,6 +10,7 @@
     <meta name="keywords" content="hospital privado, servicios médicos, consultas médicas, urgencias">
 
     <!-- Favicons para dispositivos y navegadores -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <!-- Archivo CSS principal -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,9 +26,7 @@
     <!-- JavaScript -->
     <script src="js/script.js" defer></script>
 
-
 </head>
-
 <body>
 
     <!-- Sección barra de navegación -->
@@ -58,9 +57,9 @@
     </section>
 
     <!-- Sección lista del equipo médico -->
-    <div class="equipo-medico"></div>
-    <!-- Los doctores se agregarán aquí dinámicamente con JavaScript -->
-    </div>
+    <section class="equipo-medico" id="equipo-medico">
+        <!-- Los doctores se agregarán aquí dinámicamente con JavaScript -->
+    </section>
 
     <!-- Sección footer -->
     <footer class="seccionfooterdesktop">
@@ -104,6 +103,51 @@
             </div>
         </article>
     </footer>
+
+    <!-- Aquí agregamos el script final que cargará dinámicamente los miembros del equipo -->
+    <script>
+        // Array de médicos
+        const equipoMedico = [
+            {
+                nombre: "Dr. Juan Pérez",
+                especialidad: "Cardiólogo",
+                imagen: "assets/img/doctores/doctor1.jpg"
+            },
+            {
+                nombre: "Dra. María López",
+                especialidad: "Pediatra",
+                imagen: "assets/img/doctores/doctor2.jpg"
+            },
+            {
+                nombre: "Dr. Roberto López",
+                especialidad: "Neurológo",
+                imagen: "assets/img/doctores/doctor3.jpg"
+            },
+            {
+                nombre: "Dra. Ana Martinez",
+                especialidad: "Oncóloga",
+                imagen: "assets/img/doctores/doctor4.jpg"
+            }
+        ];
+
+        // Función para mostrar los médicos
+        function mostrarEquipo() {
+            const contenedor = document.getElementById("equipo-medico");
+            equipoMedico.forEach(doctor => {
+                const div = document.createElement("div");
+                div.classList.add("doctor");
+                div.innerHTML = `
+                    <img src="${doctor.imagen}" alt="${doctor.nombre}" class="img-doctor">
+                    <h3>${doctor.nombre}</h3>
+                    <p>${doctor.especialidad}</p>
+                `;
+                contenedor.appendChild(div);
+            });
+        }
+
+        // Llamamos a la función para mostrar los médicos
+        mostrarEquipo();
+    </script>
 
 </body>
 </html>

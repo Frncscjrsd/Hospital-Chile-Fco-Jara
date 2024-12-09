@@ -8,7 +8,7 @@
 
 /* Tipografía online Google Font */
 
-h1{
+h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -16,7 +16,7 @@ h1{
     color: #407BFF;
 }
 
- h2{
+h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -24,7 +24,7 @@ h1{
     color: #407BFF;
 }
 
-h3{
+h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -32,7 +32,7 @@ h3{
     color: #407BFF; 
 }
 
-h4{
+h4 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -40,7 +40,7 @@ h4{
     color: black;
 }
 
-h5{
+h5 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -48,21 +48,21 @@ h5{
     color: #407BFF;
 }
 
-p{
+p {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 18px;
     font-style: normal;
 }
 
-a{
+a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
 }
 
-/* Estillos sección menú navegación */
+/* Estilos sección menú navegación */
 
 .seccion-navbar {
     display: flex;
@@ -111,7 +111,8 @@ a{
     justify-content: space-between;
     padding: 4rem;
     background-color: #f4f4f4;
-    height: 717px;
+    height: auto;
+    min-height: 717px;
     background: linear-gradient(300deg,#ffffff,#407bff);
     background-size: 120% 120%;
     animation: gradient-animation 6s ease infinite;
@@ -130,7 +131,9 @@ a{
 }
 
 .bienvenida img {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     margin-bottom: 120px;
 }
 
@@ -165,7 +168,9 @@ a{
 }
 
 .card-servicios img {
-    width: 80%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .card-servicios p {
@@ -221,8 +226,9 @@ a{
     background-color: #90CAF9;
     border-radius: 15px;
     padding: 32px;
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     color: white;
 }
 
@@ -301,7 +307,8 @@ a{
 }
 
 .columna-cuatro-footer {
-    width: 354px;
+    width: 100%;
+    max-width: 354px;
 }
 
 .columna-cuatro-footer p {
@@ -312,7 +319,8 @@ a{
 /* Barra buscar */
 
 .seccionfooterdesktop input {
-    width: 354px;
+    width: 100%;
+    max-width: 354px;
     height: 46px;
     background-color: white;
     padding: 8px;

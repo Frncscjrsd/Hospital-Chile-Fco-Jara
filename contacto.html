@@ -1,175 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 
     <!-- Descripción para el SEO -->
-
     <meta name="description" content="Hospital privado ofrece sus servicios médicos">
     <meta name="keywords" content="hospital privado, servicios médicos, consultas médicas, urgencias">
 
     <!-- Favicons para dispositivos y navegadores -->
-
-    <!-- Archivo CSS principal -->
-
+    <!-- Archivos CSS principales -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/style3.css">
     <link rel="stylesheet" href="assets/css/mediaq.css">
 
     <!-- Tipografía -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
     <!-- JavaScript -->
-
     <script src="js/script.js" defer></script>
-
-
 </head>
 
 <body>
 
-     <!--Sección barra de navegación-->
-
-     <nav id="navbar" class="seccion-navbar">
-
+    <!-- Sección barra de navegación -->
+    <nav id="navbar" class="seccion-navbar">
         <a href="index.html"><img src="assets/img/logo.png" width="40px" alt="logotipo"></a>
-
         <ul class="lista-navbar">
-
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="index.html">Servicios</a>
-            </li>
-            <li>
-                <a href="index.html">Equipo médico</a>
-            </li>
-            <li>
-                <a href="index.html">Testimonios</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-           
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="equipo-medico.html">Equipo médico</a></li>
+            <li><a href="index.html">Testimonios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
-
-        <button> <a href="index.html">Reservar cita</a></button>
-
+        <button><a href="index.html">Reservar cita</a></button>
     </nav>
 
-     <!-- sección encabezado -->
-
-     <header class="bienvenida">
-
+    <!-- Sección encabezado -->
+    <header class="bienvenida">
         <div>
             <h1>Hospital Privado para Chile</h1>
             <p>Estamos aquí para ayudarle y resolver cualquier consulta.</p>
         </div>
-
     </header>
 
-    <!-- sección formulario de contacto -->
+    <!-- Sección equipo médico -->
+    <section class="equipo-medico">
+        <h2>Equipo Médico</h2>
+        <div id="equipo-medico"></div> <!-- Contenedor donde se mostrarán los médicos -->
+    </section>
 
+    <!-- Sección formulario de contacto -->
     <section class="contacto">
-
         <h2>Contáctenos</h2>
-
-        <form id="contactForm">
-
+        <form id="contactForm" onsubmit="return validarFormulario()">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
-
+            
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required>
-
+            
             <label for="subject">Asunto:</label>
             <input type="text" id="subject" name="subject" required>
-
-            <label for="mesagge">Mensaje:</label>
-            <textarea id="mesagge" name="mesagge" required></textarea>
-
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
             <button type="submit">Enviar</button>
-
         </form>
-
     </section>
 
-    <!-- sección mapa de ubicación -->
-
+    <!-- Sección mapa de ubicación -->
     <section class="ubicacion">
-
         <h2>Ubicación</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26635.804799664795!2d-70.66241932568356!3d-33.43691359999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c586d20d8f53%3A0xedac6c086d2b9445!2sHospital%20del%20Salvador!5e0!3m2!1ses!2scl!4v1730842656294!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
     </section>
-    
-    <!-- sección footer -->
 
-     <footer class="seccionfooterdesktop">
-
+    <!-- Sección footer -->
+    <footer class="seccionfooterdesktop">
         <article class="columnasfooter">
-
             <div class="logofooter">
-                <a href="index.html"><img src="assets/img/logo.png" height="80px" alt=""></a>
+                <a href="index.html"><img src="assets/img/logo.png" height="80px" alt="logotipo"></a>
             </div>
-
             <div>
                 <ul class="columna-uno-footer">
-                    <li> <h4>Enlaces utiles</h4></li>
+                    <li><h4>Enlaces útiles</h4></li>
                     <li><a href="index.html">Mi cuenta</a></li>
                     <li><a href="contacto.html">Ayuda</a></li>
                     <li><a href="contacto.html">Soporte</a></li>
                 </ul>
             </div>
-
             <div>
                 <ul class="columna-dos-footer">
-                    <li> <h4>Protegiendo tu experiencia</h4></li>
+                    <li><h4>Protegiendo tu experiencia</h4></li>
                     <li><a href="index.html">Política de privacidad</a></li>
                     <li><a href="index.html">Política de cookies</a></li>
-                    <li><a href="index.html">Término de Uso</a></li>
+                    <li><a href="index.html">Términos de uso</a></li>
                 </ul>
             </div>
-
             <div>
                 <ul class="columna-tres-footer">
-                    <li> <h4>Empresa</h4></li>
+                    <li><h4>Empresa</h4></li>
                     <li><a href="index.html">Hospital privado</a></li>
                     <li><a href="index.html">Sobre nosotros</a></li>
                     <li><a href="contacto.html">Trabaja con Nosotros</a></li>
                 </ul>
             </div>
-
             <div class="columna-cuatro-footer">
-
                 <h4>Suscríbete</h4>
-
                 <div class="inputsuscribirse">
                     <ul>
                         <li class="barrabuscar"><i class="bi bi-search"></i><input type="text" placeholder="Correo electrónico"></li>
                         <li><a href="index.html"><i class="bi2 bi-person"></i></a></li>
                     </ul>
                 </div>
-
-                <p>Únete a nuestro Newsletter para mantenerte 
-                informado sobre nuestras novedades</p>
-
+                <p>Únete a nuestro Newsletter para mantenerte informado sobre nuestras novedades</p>
             </div>
-
         </article>
-
     </footer>
-    
+
 </body>
 </html>

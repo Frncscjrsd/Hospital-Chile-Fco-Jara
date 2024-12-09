@@ -34,12 +34,12 @@ if (/^\d{9}$/.test(telefono)) {
 // 3. Ciclos e Iteraciones: Uso en la Interfaz
 
 const doctores = [
-    { nombre: 'Dra. María García', experiencia: 6, especialidad: 'Pediatría', imagen: 'assets/img/doctor2.jpg' },
-    { nombre: 'Dra. Josefa García', experiencia: 2, especialidad: 'Pediatría', imagen: 'assets/img/doctor2.jpg' },
-    { nombre: 'Dr. Roberto López', experiencia: 10, especialidad: 'Neurología', imagen: 'assets/img/doctor3.jpg'  },
-    { nombre: 'Dr. Luis López', experiencia: 3, especialidad: 'Neurología', imagen: 'assets/img/doctor3.jpg'  },
-    { nombre: 'Dra. Ana Martínez', experiencia: 8, especialidad: 'Oncología', imagen: 'assets/img/doctor4.jpg' },
-    { nombre: 'Dr. Juan Pérez', experiencia: 30, especialidad: 'Cardiología', imagen: 'assets/img/doctor1.jpg' },
+    { nombre: 'Dra. María García', experiencia: 6, especialidad: 'Pediatría', imagen: 'assets/img/doctores/doctor2.jpg' },
+    { nombre: 'Dra. Josefa García', experiencia: 2, especialidad: 'Pediatría', imagen: 'assets/img/doctores/doctor2.jpg' },
+    { nombre: 'Dr. Roberto López', experiencia: 10, especialidad: 'Neurología', imagen: 'assets/img/doctores/doctor3.jpg'  },
+    { nombre: 'Dr. Luis López', experiencia: 3, especialidad: 'Neurología', imagen: 'assets/img/doctores/doctor3.jpg'  },
+    { nombre: 'Dra. Ana Martínez', experiencia: 8, especialidad: 'Oncología', imagen: 'assets/img/doctores/doctor4.jpg' },
+    { nombre: 'Dr. Juan Pérez', experiencia: 30, especialidad: 'Cardiología', imagen: 'assets/img/doctores/doctor1.jpg' },
 ];
 
 // 3.2 - Seleccionar el contenedor en el DOM para mostrar la lista de doctores
@@ -120,25 +120,25 @@ const equipoMedico = [
         nombre: "Dr. Juan Pérez",
         especialidad: "Cardiología",
         descripcion: "Experto en enfermedades del corazón y en brindar tratamientos personalizados.",
-        img: "assets/img/doctor1.jpg"
+        img: "assets/img/doctores/doctor1.jpg"
     },
     {
         nombre: "Dra. María García",
         especialidad: "Pediatría",
         descripcion: "Comprometida con la salud y el bienestar de los más pequeños.",
-        img: "assets/img/doctor2.jpg"
+        img: "assets/img/doctores/doctor2.jpg"
     },
     {
         nombre: "Dr. Roberto López",
         especialidad: "Neurología",
         descripcion: "Experto en trastornos del sistema nervioso y en investigaciones innovadoras.",
-        img: "assets/img/doctor3.jpg"
+        img: "assets/img/doctores/doctor3.jpg"
     },
     {
         nombre: "Dra. Ana Martínez",
         especialidad: "Oncología",
         descripcion: "Enfocada en ofrecer esperanza y apoyo en el tratamiento del cáncer.",
-        img: "assets/img/doctor4.jpg"
+        img: "assets/img/doctores/doctor4.jpg"
     }
 ];
 
@@ -166,3 +166,106 @@ function renderizarEquipo() {
 
 // Llamada a la función para cargar el equipo médico cuando la página cargue
 document.addEventListener("DOMContentLoaded", renderizarEquipo);
+
+// 1. Programación Funcional en JavaScript
+
+// Implementación de currying para calcular el costo total de los servicios
+const calcularCosto = precio => consultas => precio * consultas;
+
+// Función flecha para calcular el tiempo promedio de espera de los pacientes
+const calcularPromedioEspera = (tiemposEspera) => tiemposEspera.reduce((total, tiempo) => total + tiempo, 0) / tiemposEspera.length;
+
+// Recursión para calcular el total de horas de consulta de un doctor
+const calcularTotalHoras = (horas, dias) => dias === 0 ? horas : calcularTotalHoras(horas + 8, dias - 1);
+
+// Composición de funciones para aplicar descuentos
+const aplicarDescuento = descuento => costo => costo - (costo * descuento);
+
+// Ejemplo de uso
+const costoConsulta = calcularCosto(20); // 20 es el precio por consulta
+const costoTotal = costoConsulta(5); // 5 consultas
+const descuentoAplicado = aplicarDescuento(0.1)(costoTotal); // 10% de descuento
+
+console.log(`Costo Total: $${costoTotal}`);
+console.log(`Costo con Descuento: $${descuentoAplicado}`);
+
+// 2. Programación Orientada a Eventos y Asíncrona
+
+// Capturar el envío del formulario
+const formulario = document.querySelector('#formulario-contacto');
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Formulario enviado correctamente');
+});
+
+// Evento personalizado para simular la llegada de un nuevo paciente
+const eventoNuevoPaciente = new Event('nuevoPaciente');
+document.dispatchEvent(eventoNuevoPaciente);
+
+document.addEventListener('nuevoPaciente', () => {
+    alert('¡Nuevo paciente ha llegado!');
+});
+
+// Simulación de llamada a API con async/await
+const obtenerDatosDoctores = async () => {
+    try {
+        let respuesta = await fetch('https://api.doctores.com');
+        if (!respuesta.ok) throw new Error('Error al obtener los datos');
+        let datos = await respuesta.json();
+        console.log(datos);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+};
+obtenerDatosDoctores();
+
+// 3. Programación Orientada a Objetos en JavaScript
+
+// Clase Doctor
+class Doctor {
+    constructor(nombre, especialidad, experiencia) {
+        this.nombre = nombre;
+        this.especialidad = especialidad;
+        this._experiencia = experiencia;
+        this.pacientesAtendidos = 0;
+    }
+
+    mostrarInfo() {
+        console.log(`Doctor: ${this.nombre}, Especialidad: ${this.especialidad}, Experiencia: ${this._experiencia} años`);
+    }
+
+    atenderPaciente() {
+        this.pacientesAtendidos += 1;
+    }
+
+    get experiencia() {
+        return this._experiencia;
+    }
+
+    set experiencia(value) {
+        if (value < 0) {
+            console.log('La experiencia no puede ser negativa');
+        } else {
+            this._experiencia = value;
+        }
+    }
+}
+
+// Subclase Cirujano que extiende Doctor
+class Cirujano extends Doctor {
+    constructor(nombre, especialidad, experiencia, operacionesRealizadas) {
+        super(nombre, especialidad, experiencia);
+        this.operacionesRealizadas = operacionesRealizadas;
+    }
+
+    calcularOperaciones() {
+        return this.operacionesRealizadas * 200;
+    }
+}
+
+// Crear un nuevo doctor y utilizar su método
+let drCarlos = new Cirujano('Dr. Carlos Pérez', 'Cirugía', 15, 50);
+drCarlos.mostrarInfo();
+console.log('Total operaciones: ', drCarlos.calcularOperaciones());
+
+
